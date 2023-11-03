@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="scripts/script.js" defer></script>
+    <script src="scripts/game.js" defer></script>
+</head>
+<body>
+
+    <header id="head">
+        <div id="presentation">
+            <h1>Jogo da Velha</h1>
+            <h2>Coloque o nome de cada Jogador, para começar a jogar.   </h2>
+        </div>
+        <div id="input">
+            <div id="p1">
+                <h3 class="name_player">Jogador X</h3>
+                <input type="text" id="player_1" class="barra">
+            </div>
+            <div id="p2">
+                <h3 class="name_player">Jogador O</h3>
+                <input type="text" id="player_2" class="barra">
+            </div>
+            <button class="start" onclick="to_board()">Começar jogo</button>
+        </div>
+</header>
+
+    <article id="game_board">
+        <h1>Jogo da Velha</h1>
+        <div id="board_game">
+            <div id="player_round">
+            </div>
+            <div class="square_row">
+                <div id="0" class="square"></div>
+                <div id="1" class="square"></div>
+                <div id="2" class="square"></div>
+            </div>
+            <div class="square_row">
+                <div id="3" class="square"></div>
+                <div id="4" class="square"></div>
+                <div id="5" class="square"></div>
+            </div>
+            <div class="square_row">
+                <div id="6" class="square"></div>
+                <div id="7" class="square"></div>
+                <div id="8" class="square"></div>
+            </div>
+        </div>
+    </article>
+
+    <div id="resultado">
+    </div>
+</body>
+</html>
